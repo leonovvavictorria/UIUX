@@ -1,0 +1,251 @@
+$pagination-color: #f7bc46;
+$pagination-bg: #054673;
+$pagination-active-color: rgb(0, 0, 0);
+$pagination-active-bg: #f7bc46;
+$pagination-active-border-color: #f7bc46;
+$pagination-disabled-color: #054673;
+$pagination-disabled-bg: #e09b12;
+$pagination-disabled-border-color: #f7bc46;
+
+$table-color: rgb(136, 122, 122);
+$table-bg: transparent;
+
+$primary-text: #054673;
+$secondary-text: black;
+$primary-background: #094039;
+$secondary-background: #f7bc46;
+$border-color: $secondary-background;
+
+$font-size-lg: 3;
+$h1-font-size: 80px;
+
+@import 'C:/Users/igork/OneDrive/Рабочий стол/vik/node_modules/bootstrap/scss/bootstrap.scss';
+
+@font-face {
+  font-family: Gilroy;
+  src: url(/Gilroy-Light.otf);
+}
+
+.col-img {
+  width: 30%;
+}
+
+@include media-breakpoint-down(sm) {
+  * {
+    font-size: 0.9rem;
+  }
+}
+
+.col-foot-wide {
+  @extend .col-8;
+}
+
+.col-foot-small {
+  @extend .col-2;
+}
+
+.col-foot-arrow {
+  @extend .col;
+}
+
+* {
+  line-height: 1.33333333333;
+  font-family: Gilroy, helvetica neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: $primary-background;
+}
+
+.head-text {
+  color: #f7bc46;
+}
+
+.button {
+  color: #054673;
+}
+
+.center-logo {
+  margin: auto;
+  display: block;
+  max-width: 190px;
+}
+
+.btn-primary {
+  background-color: $primary-background;
+}
+
+.footer {
+  background-color: $primary-text;
+}
+
+.header {
+  background-color: $primary-text;
+  display: block;
+}
+
+.card-title {
+  color: $primary-text;
+}
+
+.card-subtitle {
+  color: $primary-text;
+}
+
+.box-title {
+  color: $primary-text;
+}
+
+.card-body-text-detail {
+  color: $secondary-text;
+}
+
+.card-item {
+  @extend .card;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  z-index: 15;
+  overflow: hidden;
+  border-radius: 15px;
+  max-height: 40rem;
+}
+
+.text-body-secondary {
+  color: #f7bc46 !important;
+}
+
+.card-item-body {
+  @extend .card-body;
+  border: 1px solid black;
+  border-top: none;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  background-color: $secondary-background;
+  min-height: 0;
+}
+
+.card-item-title {
+  @extend .card-title;
+}
+
+.card-item-text {
+  @extend .card-text;
+  color: $secondary-text;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.card-item-img,
+.card-item-img-top {
+  @extend .card-img, .card-img-top;
+  border-radius: 0px;
+}
+
+.card-detail {
+  @extend .card;
+  background-color: transparent;
+  border: none;
+}
+
+@include media-breakpoint-down(lg) {
+  .card-item-text {
+    font-size: 1rem;
+  }
+
+  .card-item-title {
+    font-size: 1.5rem;
+  }
+}
+
+.nav-tabs .nav-link.active {
+  border-color: transparent;
+}
+
+.nav-tabs {
+  border-width: 0px;
+}
+
+.no-decoration {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination {
+  width: fit-content;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.card-detail {
+  @extend .card;
+}
+
+.container-detail {
+  @extend .container;
+  display: flex;
+  background-color: $secondary-background;
+}
+
+.card-body-detail {
+  @extend .card-body;
+  padding: 1%;
+}
+
+.row-detail {
+  @extend .row;
+  padding-top: 1%;
+}
+
+.col-comment-button {
+  margin-left: auto;
+  flex: 0 0 auto;
+  width: 30%;
+}
+
+@include media-breakpoint-down(xl) {
+  .row-detail {
+    display: block;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .col-img {
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .col-comment-button {
+    flex: 1 0;
+  }
+
+  .center-logo {
+    width: 130px;
+  }
+
+  .col-foot-wide {
+    width: 60%;
+    flex: 0 0 auto;
+  }
+
+  .col-foot-small {
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  .col-foot-arrow {
+    width: 33.33333%;
+    flex: 0 0 auto;
+  }
+
+  .col-img {
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+  }
+}
